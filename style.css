@@ -780,7 +780,7 @@ color: white;
 /*  AQUI TERMINA LA PARTE FINAL DE LA PAGINA */
 
 /* RESPONSIVE CORREGIDO - FUNCIONA CON TU CSS EXACTO */
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .franja-izquierda {
     display: none;
   }
@@ -805,7 +805,7 @@ color: white;
 
 @media (max-width: 768px) {
   /* HEADER */
-  .top-cuadro1 {
+  /* .top-cuadro1 {
     height: auto !important;
     padding: 20px !important;
     position: relative !important;
@@ -840,7 +840,7 @@ color: white;
   }
 
   /* CUADRO 1 */
-  .cuadro1 {
+  /* .cuadro1 {
     height: auto !important;
     min-height: 700px !important;
     padding: 100px 20px !important;
@@ -878,10 +878,10 @@ color: white;
     max-width: 350px !important;
     margin: 40px auto 0 !important;
     display: block !important;
-  }
+  } */
 
   /* FRANJAS Y GALERÍAS */
-  .franja1, .franja2 {
+  /* .franja1, .franja2 {
     height: auto !important;
     padding: 60px 20px !important;
   }
@@ -905,9 +905,9 @@ color: white;
     width: 150px !important;
     height: auto !important;
   }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .titulo-cuadro1 {
     font-size: 28px !important;
   }
@@ -917,10 +917,10 @@ color: white;
   .galeria-franja1 img {
     width: 120px !important;
   }
-}
+} */
 
 /* SUBCUADROS RESPONSIVE */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .cuadros5, .sub-cuadro1, .sub-cuadro2, .sub-cuadro3, .sub-cuadro4, .sub-cuadro5 {
     position: relative !important;
     height: auto !important;
@@ -944,10 +944,10 @@ color: white;
     flex-direction: column !important;
     align-items: center !important;
   }
-}
+} */
 
 /* TOP-FONDO Y FOOTER */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .top-fondo {
     position: relative !important;
     height: auto !important;
@@ -970,5 +970,5 @@ color: white;
     left: 0 !important;
     margin-bottom: 40px !important;
     text-align: center !important;
-  }
+  } */
 }
