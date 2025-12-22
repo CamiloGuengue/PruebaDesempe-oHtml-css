@@ -1,14 +1,37 @@
+.body-html{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.franja-izquierda{
+  position: fixed;
+  top: 0px;
+  width: 221.1px;
+  height: 4330px;
 
+}
+.franja-izquierda{
+  background-color: black;
+}
+.franja-derecha{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 228.1px;
+  height: 4330px;
+}
+.franja-derecha{
+  background-color: black;
+}
 /* SE LE DA ESTILO A LA BARRA SUPERIOR DE LA PAGINA */
 .top-cuadro1{
-    width: auto;
+    width: 1440px;
     height: 84px;
-    background-color: #F5F7FA;
+    background-color: white;
 }
 .imagen{
     position: absolute;
-    left: 200px;
-    top: 38px;
+    left: 400px;
+    top: 50px;
 }
 .menu{
     display: flex;
@@ -17,7 +40,7 @@
 }
 .menu{
     position: absolute;
-    left: 430px;
+    left: 700px;
     top: 30px;
 }
 .menu1{
@@ -32,7 +55,7 @@ color: #18191F;
 }
 .login{
     position: absolute;
-    left: 1000px;
+    left: 1300px;
     top: 30px;
     display: flex;
     flex-direction: row;
@@ -61,7 +84,7 @@ color: #18191F;
 }
 .img-cuadro1{
     position: absolute;
-    left: 700px;
+    left: 1200px;
     top: 200px;
 }
 .titulo-cuadro1{
@@ -81,8 +104,8 @@ color:  #4D4D4D;
 
 .titulo-cuadro1{
     position: absolute;
-    left: 70px;
-    top: 200px;
+    left: 400px;
+    top: 250px;
     width: 600px;
 
 }
@@ -100,14 +123,14 @@ color: #717171;
 
 .subtitulo-cuadro1{
     position: absolute;
-    left: 70px;
-    top: 410px;
+    left: 400px;
+    top: 460px;
 }
 
 .btn-register-cuadro1{
     position: absolute;
-    left: 70px;
-    top: 480px;
+    left: 400px;
+    top: 530px;
 }
 
 .btn-register-cuadro1{
@@ -134,7 +157,7 @@ border-radius: 10px;
 
 .titulo-franja1{
     position: absolute;
-    left: 620px;
+    left: 870px;
     top: 780px;
 }
 .titulo-franja1{
@@ -160,14 +183,14 @@ color: #717171;
 
 .subtitulo-franja1{
     position: absolute;
-    left: 540px;
+    left: 790px;
     top:850px;
 }
 
 .galeria-franja1{
     position: absolute;
     top: 920px;
-    left: 110px;
+    left: 360px;
 }
 
 .galeria-franja1{
@@ -204,13 +227,13 @@ color: #717171;
 .titulo-franja2{
     width: 500px;
     position: absolute;
-    left: 470px;
+    left: 720px;
     top: 970px;
 
 }
 .subtitulo-franja2{
     position: absolute;
-    left: 620px;
+    left: 870px;
     top: 1090px;
 }
 /* HASTA AQUI VA EL ESTILO QUE SE LE DIO A LA FRANJA2 */
@@ -218,7 +241,7 @@ color: #717171;
 
 .galeria-fondo-cuadro{
     position: absolute;
-    left: 220px;
+    left: 470px;
     top: 1150px;
 
 }
@@ -230,7 +253,7 @@ color: #717171;
 
 .info-fondo-cuadro{
     position: absolute;
-    left: 220px;
+    left: 470px;
     top: 1305px;
     display: flex;
     width: 1050px;
@@ -575,7 +598,7 @@ color: #4D4D4D;
 }
 .titulo-cuadro5{
     position: absolute;
-    left: 520px;
+    left: 420px;
     width: 600px;
 }
 .subtitulo-cuadro5{
@@ -593,7 +616,7 @@ color: #717171;
 }
 .subtitulo-cuadro5{
     position: absolute;
-    left: 550px;
+    left: 450px;
     top: 70px;
 }
 
@@ -606,12 +629,12 @@ color: #717171;
 .galeria-cuadro5{
     position: absolute;
     top: 180px;
-    left: 265px;
+    left: 165px;
 }
 .galeria2-cuadro5{
     position: absolute;
     top: 360px;
-    left: 270px;
+    left: 170px;
 }
 
 .galeria2-cuadro5{
@@ -678,7 +701,7 @@ position: absolute;
 width: 1440px;
 height: 328px;
 opacity: 1;
-top: 4120px;
+top: 4118px;
 background-color: #263238;
 
 }
@@ -755,282 +778,197 @@ color: white;
 
 }
 /*  AQUI TERMINA LA PARTE FINAL DE LA PAGINA */
-/* ============ Base responsive ============ */
-:root{
-  --max: 1240px;
-  --page: 1440px;
-  --gap: 16px;
-}
 
-body{
-  /* en vez de padding-top fijo, usa variables si cambias alturas */
-  padding-top: 108px; /* 38 top-bar + ~70 nav-bar */
-}
-
-/* Evita anchos fijos que rompen en móvil */
-.top-bar,
-.nav-bar,
-.cuadro,
-.franja{
-  width: min(var(--page), 100%);
-}
-
-/* Centrado sin left:50% + translateX */
-.top-bar,
-.nav-bar,
-.cuadro,
-.franja{
-  left: auto;
-  transform: none;
-  margin: 0 auto;
-}
-
-/* ============ Top bar (flex) ============ */
-.top-bar{
-  position: fixed;
-  inset: 0 0 auto 0;            /* top:0; left:0; right:0 */
-  height: auto;
-  padding: 10px 12px;
-  display: flex;
-  justify-content: center;
-}
-
-.top-bar-text{
-  position: static;             /* quita fixed */
-  text-align: center;
-  padding-right: 34px;          /* espacio para la X */
-  line-height: 1.3;
-}
-
-.close-btn{
-  right: 12px;
-}
-
-/* ============ Navbar (grid) ============ */
-.nav-bar{
-  position: fixed;              /* para que acompañe el scroll */
-  top: 38px;
-  inset-inline: 0;              /* left/right */
-  height: auto;
-  z-index: 999;
-  border-bottom: 1px solid #eee;
-}
-
-.nav-container{
-  width: min(var(--max), 94vw);
-  margin: 0 auto;
-  height: auto;
-  padding: 10px 0;
-  gap: 18px;
-
-  display: grid;
-  grid-template-columns: auto auto auto auto auto 1fr auto;
-  align-items: center;
-}
-
-/* Buscador siempre flexible */
-.search-box{
-  width: 100%;
-  min-width: 220px;
-}
-
-/* Iconos derecha en flex */
-.nav-images{
-  justify-self: end;
-  display: flex;
-  gap: 12px;
-}
-
-/* ============ HERO (.cuadro) usando grid ============ */
-.cuadro{
-  position: relative;
-  top: 0;                 /* ya no dependas de top:90px */
-  margin-top: 108px;      /* empuja debajo de header fijo */
-  height: auto;
-  padding: 48px 0;
-}
-
-.cuadro{
-  display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  align-items: center;
-}
-
-/* Columna izquierda: texto en flujo (sin absolute) */
-.text-box-simple-dos,
-.text-box-simple-uno,
-.btn-cta,
-.text-box3{
-  position: static;
-  left: auto; top: auto;
-  width: auto;
-}
-
-.text-box-simple-dos{ margin-left: 105px; max-width: 640px; }
-.text-box-simple-uno{ margin-left: 105px; margin-top: 18px; max-width: 560px; }
-.btn-cta{ margin-left: 105px; margin-top: 22px; }
-.text-box3{ margin-left: 105px; margin-top: 28px; }
-
-/* Stats en flex (ya lo tenías, solo asegure wrap) */
-.text-box3{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px 32px;
-}
-
-/* Columna derecha: imagen fluida */
-.img-movil{
-  position: static;   /* fuera absolute */
-  width: min(650px, 92%);
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
-/* Figuras decorativas: puedes dejarlas absolute */
-.figure1, .figure2{ position: absolute; }
-
-/* ============ Franja logos (flex responsive) ============ */
-.franja{
-  position: static;     /* no absolute: que siga el flujo */
-  height: auto;
-  padding: 18px 0;
-  margin: 0 auto;
-}
-
-.imagenes-franja-negra{
-  width: min(var(--max), 94vw);
-  margin: 0 auto;
-  gap: 48px;
-  justify-content: space-between;
-}
-
-.imagenes-franja-negra img{
-  max-height: 26px;
-  width: auto;
-  transform: none;
-}
-
-/* ============ Galerías (grid responsive) ============ */
-.bloque-imagenes{
-  width: min(var(--max), 94vw);
-  margin-top: 48px;
-}
-
-.galeria{
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-}
-
-/* ============ Comentarios (grid) ============ */
-.titulo-comentarios{
-  width: min(var(--max), 94vw);
-  margin: 0 auto;
-  padding-left: 0;
-  top: 0;
-  justify-content: space-between;
-}
-
-.flechas-comentarios{
-  padding-left: 0;
-}
-
-.imagenes-comentarios{
-  width: min(var(--max), 94vw);
-  margin: 26px auto 0;
-  flex-wrap: wrap;
-}
-
-/* ============ Cuadro2 (grid de imágenes) ============ */
-.cuadro2{
-  width: min(1239px, 94vw);
-}
-
-.bloque-imagenes-cuadro2{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-
-/* ============ Cuadro3 (newsletter) ============ */
-.franja-negra-cuadro3{
-  width: min(var(--max), 94vw);
-  transform: none; /* evita subirlo en móvil */
-}
-
-.titulo-franja-cuadro3{
-  top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  margin-bottom: 14px;
-}
-
-/* Alinea input+botón en grid */
-.franja-negra-cuadro3{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-}
-
-.campo-correo,
-.btn-suscribirse{
-  width: 100%;
-  margin-left: 0;
-  margin-top: 0;
-}
-
-.imagen-fondo,
-.fondo-top-titulo,
-.imagen-fondo-top{
-  width: min(var(--max), 94vw);
-  margin: 18px auto 0;
-}
-
-/* ============ Breakpoints ============ */
-@media (max-width: 1100px){
-  .nav-container{
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas:
-      "title search icons"
-      "links links links";
-    gap: 12px;
+/* RESPONSIVE CORREGIDO - FUNCIONA CON TU CSS EXACTO */
+@media (max-width: 1440px) {
+  .franja-izquierda {
+    display: none;
   }
-
-  #nav-tittle{ grid-area: title; }
-  .search-box{ grid-area: search; }
-  .nav-images{ grid-area: icons; }
-
-  /* Agrupa links (Shop/On Sale/New Arrivals/Brands) en una fila */
-  .dropdown-content,
-  .nav-container > a{
-    grid-area: links;
-    justify-self: start;
-  }
-
-  .cuadro{
-    grid-template-columns: 1fr;
-    gap: 18px;
-    padding: 28px 0;
-  }
-
-  .text-box-simple-dos,
-  .text-box-simple-uno,
-  .btn-cta,
-  .text-box3{
-    margin-left: 18px;
-    margin-right: 18px;
+  .franja-derecha {
+    display: none;
   }
 }
 
-@media (max-width: 600px){
-  body{ padding-top: 120px; }
+@media (max-width: 1200px) {
+  .body-html {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .top-cuadro1 {
+    width: 100%;
+  }
+  .cuadro1 {
+    height: auto;
+    min-height: 600px;
+  }
+}
 
-  .search-box{ min-width: 0; }
-  .imagenes-franja-negra{
-    justify-content: center;
-    gap: 22px;
+@media (max-width: 768px) {
+  /* HEADER */
+  .top-cuadro1 {
+    height: auto !important;
+    padding: 20px !important;
+    position: relative !important;
+  }
+  .imagen {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 auto 15px !important;
+    width: 150px !important;
+    text-align: center;
+  }
+  .imagen img {
+    width: 100% !important;
+    max-width: 150px;
+  }
+  .menu {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin: 10px 0 !important;
+    width: 100% !important;
+  }
+  .login {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    justify-content: center !important;
+    width: 100% !important;
   }
 
-  .text-box-simple-dos{ font-size: 38px; line-height: 1.05; }
-  .enfasis-text3{ font-size: 38px; }
+  /* CUADRO 1 */
+  .cuadro1 {
+    height: auto !important;
+    min-height: 700px !important;
+    padding: 100px 20px !important;
+  }
+  .titulo-cuadro1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    font-size: 36px !important;
+    line-height: 44px !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+  .subtitulo-cuadro1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 30px !important;
+  }
+  .btn-register-cuadro1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .img-cuadro1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 80% !important;
+    max-width: 350px !important;
+    margin: 40px auto 0 !important;
+    display: block !important;
+  }
+
+  /* FRANJAS Y GALERÍAS */
+  .franja1, .franja2 {
+    height: auto !important;
+    padding: 60px 20px !important;
+  }
+  .titulo-franja1, .subtitulo-franja1, 
+  .titulo-franja2, .subtitulo-franja2 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+  .galeria-franja1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  .galeria-franja1 img {
+    width: 150px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-cuadro1 {
+    font-size: 28px !important;
+  }
+  .menu1 {
+    font-size: 14px !important;
+  }
+  .galeria-franja1 img {
+    width: 120px !important;
+  }
+}
+
+/* SUBCUADROS RESPONSIVE */
+@media (max-width: 768px) {
+  .cuadros5, .sub-cuadro1, .sub-cuadro2, .sub-cuadro3, .sub-cuadro4, .sub-cuadro5 {
+    position: relative !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 60px 20px !important;
+  }
+  
+  .img-sub-cuadro1, .imagen-sub-cuadro3, .imagen-sub-cuadro4,
+  .titulo-sub-cuadro1, .subtitulo-sub-cuadro1, .btn-sub-cuadro1 {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 20px auto !important;
+    text-align: center !important;
+  }
+  
+  .galeria-fondo-cuadro, .info-fondo-cuadro {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
+
+/* TOP-FONDO Y FOOTER */
+@media (max-width: 768px) {
+  .top-fondo {
+    position: relative !important;
+    height: auto !important;
+    padding: 60px 20px !important;
+    width: 100% !important;
+  }
+  .titulo-top-fondo {
+    position: relative !important;
+    left: 0 !important;
+    text-align: center !important;
+    font-size: 36px !important;
+  }
+  .fondo {
+    position: relative !important;
+    width: 100% !important;
+    padding: 60px 20px !important;
+  }
+  .columna1, .columna2, .columna3, .columna4 {
+    position: relative !important;
+    left: 0 !important;
+    margin-bottom: 40px !important;
+    text-align: center !important;
+  }
 }
